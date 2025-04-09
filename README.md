@@ -29,9 +29,9 @@ cp -r ./dunst/* ~/.config/dunst/
 
 ## 🎨 Rofi Theme
 
-Custom Rofi themes from: 👉 [https://github.com/adi1090x/rofi](https://github.com/adi1090x/rofi)
+Custom Rofi themes from: [https://github.com/adi1090x/rofi](https://github.com/adi1090x/rofi)
 
-Clone the repo and follow the instructions there to install and apply themes.
+Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 
 ---
 

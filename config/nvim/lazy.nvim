@@ -1,5 +1,0 @@
-{
-	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpda"
-}
-

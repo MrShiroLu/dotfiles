@@ -62,5 +62,3 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 | `Mod + Shift + A`    | Launch custom Rofi web search script (`rofi-web-search.sh`)            |
 
 ---
-
-Feel free to customize the paths or configurations to suit your setup!

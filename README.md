@@ -1,4 +1,4 @@
-## 📦 Package Installation
+## Package Installation
 
 ```bash
 # Download essential dependencies
@@ -11,7 +11,7 @@ sudo pacman -S --needed wayland hyprland waybar hyprpaper kitty --noconfirm
 sudo pacman -S --needed --noconfirm $(cat packages.txt)
 ```
 
-## 🗂️ Copy Configuration Files
+## Copy Configuration Files
 
 ```bash
 # Copy configuration files to ~/.config
@@ -27,7 +27,7 @@ cp -r ./hypr/* ~/.config/hypr/
 cp -r ./dunst/* ~/.config/dunst/
 ```
 
-## 🎨 Rofi Theme
+## Themes
 
 Custom Rofi themes from: [https://github.com/adi1090x/rofi](https://github.com/adi1090x/rofi)
 
@@ -35,7 +35,7 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 
 ---
 
-## 🖼️ Desktop Preview
+## ScreenShots
 - ScreenShots
     ![desktop screenshot](img/1.png)
     ![desktop screenshot](img/2.png)
@@ -43,7 +43,7 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 
 ---
 
-## ⌨️ Hyprland Keybindings (Keystroke Style)
+## Hyprland Keybindings
 
 | Key Combo             | Action                                                                 |
 |----------------------|------------------------------------------------------------------------|

@@ -37,9 +37,9 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 
 ## 🖼️ Desktop Preview
 - ScreenShots
-    ![desktop screenshot](1.png)
-    ![desktop screenshot](2.png)
-    ![desktop screenshot](3.png)
+    ![desktop screenshot](img/1.png)
+    ![desktop screenshot](img/2.png)
+    ![desktop screenshot](img/3.png)
 
 ---
 

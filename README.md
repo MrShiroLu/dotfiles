@@ -2,10 +2,7 @@
 
 ```bash
 # Download essential dependencies
-sudo pacman -S --needed git curl wget base-devel --noconfirm
-
-# Install Wayland and Hyprland environment
-sudo pacman -S --needed wayland hyprland waybar hyprpaper kitty --noconfirm
+sudo pacman -S --needed git curl wget base-devel wayland hyprland waybar hyprpaper kitty --noconfirm
 
 # Install additional packages listed in packages.txt
 sudo pacman -S --needed --noconfirm $(cat packages.txt)
@@ -34,7 +31,7 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 
 
 
-### ScreenShots
+## ScreenShots
 <details>
 <summary>Click to expand</summary>
 
@@ -43,10 +40,7 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
    ![desktop screenshot](img/3.png)
 </details>
 
-
-
-
-## Hyprland Keybindings
+## Keybindings
 
 | Key Combo             | Action                                                                 |
 |----------------------|------------------------------------------------------------------------|

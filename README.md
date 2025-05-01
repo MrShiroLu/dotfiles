@@ -33,7 +33,9 @@ Custom Rofi themes from: [https://github.com/adi1090x/rofi](https://github.com/a
 Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 
 ---
+
 ## ScreenShots
+- 
     ![desktop screenshot](img/1.png)
     ![desktop screenshot](img/2.png)
     ![desktop screenshot](img/3.png)

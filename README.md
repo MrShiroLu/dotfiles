@@ -36,7 +36,7 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 
 ### ScreenShots
 <details>
-<summary>"Click"</summary>
+<summary>Click to expand</summary>
 
    ![desktop screenshot](img/1.png)
    ![desktop screenshot](img/2.png)

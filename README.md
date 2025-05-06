@@ -54,11 +54,11 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 | `Mod + V`            | Toggle floating mode                                                   |
 | `Mod + R`            | Open application launcher (`$menu`)                                    |
 | `Mod + F`            | Toggle fullscreen                                                      |
-| `Mod + Z`            | Launch Firefox (Flatpak Zen browser)                                   |
+| `Mod + Z`            | LaunchFirefox                                    |
 | `Mod + Shift + L`    | Lock screen using `hyprlock`                                           |
 | `Mod + H`            | Take full screenshot (`screenshot_full.sh`)                            |
 | `Mod + Shift + H`    | Take area screenshot (`screenshot_area.sh`)                            |
-| `Mod + A`            | Open clipboard history with Rofi + Cliphist                            |
+| `Mod + A`            | Open clipboard history  (Rofi + Cliphist)                          |
 | `Mod + Shift + A`    | Launch custom Rofi web search script (`rofi-web-search.sh`)            |
 
 ---

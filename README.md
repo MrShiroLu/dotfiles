@@ -2,10 +2,7 @@
 
 ```bash
 # Download essential dependencies
-sudo pacman -S --needed git curl wget base-devel --noconfirm
-
-# Install Wayland and Hyprland environment
-sudo pacman -S --needed wayland hyprland waybar hyprpaper kitty --noconfirm
+sudo pacman -S --needed git curl wget base-devel wayland hyprland waybar hyprpaper kitty --noconfirm
 
 # Install additional packages listed in packages.txt
 sudo pacman -S --needed --noconfirm $(cat packages.txt)
@@ -14,7 +11,6 @@ sudo pacman -S --needed --noconfirm $(cat packages.txt)
 ## Copy Configuration Files
 
 ```bash
-# Copy configuration files to ~/.config
 mkdir -p ~/.config/{waybar,wallpapers}
 cp -r ./config/waybar ~/.config/
 cp -r ./wallpapers/* ~/.config/wallpapers/
@@ -33,17 +29,18 @@ Custom Rofi themes from: [https://github.com/adi1090x/rofi](https://github.com/a
 
 Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 
----
+
 
 ## ScreenShots
-- ScreenShots
-    ![desktop screenshot](img/1.png)
-    ![desktop screenshot](img/2.png)
-    ![desktop screenshot](img/3.png)
+<details>
+<summary>Click to expand</summary>
 
----
+   ![desktop screenshot](img/1.png)
+   ![desktop screenshot](img/2.png)
+   ![desktop screenshot](img/3.png)
+</details>
 
-## Hyprland Keybindings
+## Keybindings
 
 | Key Combo             | Action                                                                 |
 |----------------------|------------------------------------------------------------------------|
@@ -62,5 +59,3 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 | `Mod + Shift + A`    | Launch custom Rofi web search script (`rofi-web-search.sh`)            |
 
 ---
-
-Feel free to customize the paths or configurations to suit your setup!

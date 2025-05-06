@@ -44,12 +44,12 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 
 | Key Combo             | Action                                                                 |
 |----------------------|------------------------------------------------------------------------|
-| `Mod + Q`            | Open terminal (`$terminal`)                                            |
+| `Mod + Q`            | Open terminal                                            |
 | `Mod + Shift + C`    | Kill active window                                                     |
 | `Mod + Shift + M`    | Exit Hyprland                                                          |
-| `Mod + E`            | Open file manager (`$fileManager`)                                     |
+| `Mod + E`            | Open file manager                                      |
 | `Mod + V`            | Toggle floating mode                                                   |
-| `Mod + R`            | Open application launcher (`$menu`)                                    |
+| `Mod + R`            | Open application launcher                                     |
 | `Mod + F`            | Toggle fullscreen                                                      |
 | `Mod + Z`            | LaunchFirefox                                    |
 | `Mod + Shift + L`    | Lock screen using `hyprlock`                                           |

@@ -36,7 +36,6 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 <summary>Click to expand</summary>
 
    ![desktop screenshot](img/1.png)
-   ![desktop screenshot](img/2.png)
    ![desktop screenshot](img/3.png)
 </details>
 

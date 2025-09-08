@@ -31,30 +31,17 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 
 
 
-## ScreenShots
-<details>
-<summary>Click to expand</summary>
+## Screenshots
 
-   ![desktop screenshot](img/1.png)
-   ![desktop screenshot](img/3.png)
-</details>
+<div align="center">
+<img src="img/desktop.png" width="600" alt="desktop screenshot">
+<br><br>
+<img src="img/kitty.png" width="600" alt="kitty screenshot">
+</div>
 
-## Keybindings
+## Installation Notes
 
-| Key Combo             | Action                                                                 |
-|----------------------|------------------------------------------------------------------------|
-| `Mod + Q`            | Open terminal                                            |
-| `Mod + Shift + C`    | Kill active window                                                     |
-| `Mod + Shift + M`    | Exit Hyprland                                                          |
-| `Mod + E`            | Open file manager                                      |
-| `Mod + V`            | Toggle floating mode                                                   |
-| `Mod + R`            | Open application launcher                                     |
-| `Mod + F`            | Toggle fullscreen                                                      |
-| `Mod + Z`            | Launch Firefox                                    |
-| `Mod + Shift + L`    | Lock screen using `hyprlock`                                           |
-| `Mod + H`            | Take full screenshot                            |
-| `Mod + Shift + H`    | Take area screenshot                       |
-| `Mod + A`            | Open clipboard history  (Rofi + Cliphist)                          |
-| `Mod + Shift + A`    | Launch custom Rofi web search script            |
-
----
+- Make sure you have a working Arch Linux installation
+- Ensure Wayland is properly configured
+- Some packages may require AUR (Arch User Repository)
+- After installation, log out and select Hyprland from your display manager

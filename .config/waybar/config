@@ -10,17 +10,16 @@
 
     "output" : ["eDP-1","HDMI-A-1"],
 
-    "height": 20,
+    "height": 36,
 
     "spacing": 3, // Gaps between modules (4px)
 
     "modules-left": [
         "hyprland/workspaces",
         "mpris"
-      // "hyprland/window#left"
     ],
     "modules-center": [
-        "clock#date",
+        "clock#date"
     ],
     "modules-right": [
         "backlight",
@@ -28,7 +27,7 @@
         "network",
         "battery",
         "pulseaudio",
-	    "group/drawer"
+	"group/drawer"
     ],
     // -------------------------------------------------------------------------
     // Modules
@@ -43,19 +42,15 @@
         "tooltip": false
     },
 
-    "group/drawer": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 100,
-            "children-class": "not-power",
-            "transition-left-to-right": false,
-        },
-        "modules": [
-        "tray",	
-        "custom/screenshot",
-        "wlr/taskbar",
-        ]
-    },
+"group/drawer": {
+    "orientation": "inherit",
+    "modules": [
+        "tray",
+       	"custom/notification",
+	"wlr/taskbar"
+    ]
+},
+
     "hyprland/window": {
         "format": "{initialTitle}",
 
@@ -220,8 +215,8 @@
         "return-type": "json",
         "max-length": 64,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-        "on-click": "playerctl play-pause",
-        "format-icons": {
+        "on-click": "~/.config/waybar/modules/media_popup.sh",
+	"format-icons": {
         "Playing": "<span foreground='#6791eb' font='16' rise='-500'>󰏥 </span>",
         "Paused": "<span foreground='#cdd6f4' font='16' rise='-500'>󰐌 </span>"
         },
@@ -232,7 +227,7 @@
         "return-type": "json",
         "max-length": 64,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}} | {{artist}} - {{markup_escape(title)}} \", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-        "on-click": "playerctl play-pause",
+	"on-click": "~/.config/waybar/modules/media_popup.sh",
 	"on-click-right" : "playerctl next",
 	"on-click-middle" : "playerctl previous", 
         "format-icons": {
@@ -387,5 +382,18 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+
+  "custom/swaync": {
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "",
+      "none": "",
+      "dnd-notification": "",
+      "dnd-none": ""
+    },
+    "tooltip": false
   }
+
+
 }

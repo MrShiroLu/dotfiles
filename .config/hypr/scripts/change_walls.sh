@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALL_DIR="$HOME/.config/Wallpapers/forswww"
+WALL_DIR="$HOME/.config/Wallpapers/ILIKEIT"
 
 # Start daemon if not running
 if ! pgrep -x "swww-daemon" > /dev/null; then
@@ -11,9 +11,14 @@ if ! pgrep -x "swww-daemon" > /dev/null; then
     done
 fi
 
+WALL_PREV=$(swww query | awk -F'image: ' '{print $2}' | xargs basename)
+
 # pick wallpaper
 WALLPAPER=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | shuf -n 1)
 
+if ["$WALL_PREV" = "$WALLPAPER"]; then
+	WALLPAPER=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | shuf -n 1) 
+fi
 
 pkill waybar
 

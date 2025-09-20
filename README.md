@@ -36,12 +36,13 @@ Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-the
 <div align="center">
 <img src="img/desktop.png" width="600" alt="desktop screenshot">
 <br><br>
-<img src="img/kitty.png" width="600" alt="kitty screenshot">
+<img src="img/newkitty.png" width="600" alt="kitty screenshot">
+<img src="img/taskswitcher2.png" width="600" alt="task switcher">
 </div>
+
 
 ## Installation Notes
 
 - Make sure you have a working Arch Linux installation
 - Ensure Wayland is properly configured
 - Some packages may require AUR (Arch User Repository)
-- After installation, log out and select Hyprland from your display manager

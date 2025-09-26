@@ -1,0 +1,12 @@
+alias kaspervpn "sudo openvpn --config /home/burak/Documents/vpn/kaspersky/credentials.ovpn --auth-user-pass /home/burak/Documents/vpn/kaspersky/kasper_vpn.txt"
+
+alias vpnstatus "ip addr show tun0"
+
+function vpn-status
+    if test -n (ip addr show tun0 2>/dev/null)
+        echo "✅ VPN Bağlı"
+        curl -s ipinfo.io/ip
+    else
+        echo "❌ VPN Bağlı Değil"
+    end
+end

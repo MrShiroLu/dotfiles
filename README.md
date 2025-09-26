@@ -11,9 +11,9 @@ sudo pacman -S --needed --noconfirm $(cat packages.txt)
 ## Copy Configuration Files
 
 ```bash
-mkdir -p ~/.config/{waybar,wallpapers}
+mkdir -p ~/.config/{waybar,Wallpapers}
 cp -r ./config/waybar ~/.config/
-cp -r ./wallpapers/* ~/.config/wallpapers/
+cp -r ./Wallpapers/* ~/.config/Wallpapers/
 cp -r ./kitty/* ~/.config/kitty/
 cp -r ./nemo/* ~/.config/nemo/
 cp -r ./rofi/* ~/.config/rofi/
@@ -25,11 +25,11 @@ cp -r ./dunst/* ~/.config/dunst/
 
 ## Themes
 
-Custom Rofi themes from: [https://github.com/adi1090x/rofi](https://github.com/adi1090x/rofi)
+Custom Rofi themes from: [adi1090x's rofi](https://github.com/adi1090x/rofi)
 
-Custom SDDM display themes from: [https://github.com/Keyitdev/sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
+Custom SDDM display themes from: [Keyitdev's sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
 
-
+Custom Notification center from: [iyiolacak's swaync](https://github.com/iyioalcak)
 
 ## Screenshots
 

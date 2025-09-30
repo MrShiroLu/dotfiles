@@ -1,31 +1,36 @@
 #!/bin/bash
+# Wallpaper directory
+WALL_DIR="$HOME/.config/Wallpapers/Eternal"
 
-WALL_DIR="$HOME/.config/Wallpapers/ILIKEIT"
-
-# Start daemon if not running
+# Start swww-daemon if not running
 if ! pgrep -x "swww-daemon" > /dev/null; then
     swww-daemon &
-    # daemon hazır olana kadar bekle
+    # wait until the daemon is fully started
     while ! pgrep -x "swww-daemon" > /dev/null; do
         sleep 0.2
     done
 fi
 
+# Get the currently used wallpaper (basename only, not full path)
 WALL_PREV=$(swww query | awk -F'image: ' '{print $2}' | xargs basename)
 
-# pick wallpaper
-WALLPAPER=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | shuf -n 1)
+# Pick a new wallpaper, make sure it’s not the same as the previous one
+while :; do
+    WALLPAPER=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | shuf -n 1)
+    WALLPAPER_BASENAME=$(basename "$WALLPAPER")
+    if [ "$WALLPAPER_BASENAME" != "$WALL_PREV" ]; then
+        break
+    fi
+done
 
-if ["$WALL_PREV" = "$WALLPAPER"]; then
-	WALLPAPER=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" \) | shuf -n 1) 
-fi
-
+# Restart waybar to refresh colors
 pkill waybar
 
-# set pywal colors
+# Generate colors with pywal
 wal -i "$WALLPAPER" -n -q
 
-# set wallpaper
+# Set the wallpaper with swww
 swww img "$WALLPAPER" --transition-type any
 
+# Launch waybar again
 waybar &
